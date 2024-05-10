@@ -1,0 +1,1 @@
+Cheat sheet for new Git users
