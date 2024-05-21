@@ -422,10 +422,11 @@ Git сообщит об этом с помощью статуса modified. Чт
 
 ```mermaid
 graph LR;
-untracked -- "git add" --> staged(в списке на коммит);
-staged -- "git commit" --> tracked(отслеживаемый);
-tracked -- "изменения" --> modified(изменённый);
-modified -- "git add" --> staged(в списке на коммит);
+untracked -- "git add" --> staged;
+staged -- "git commit" --> tracked;
+staged -- "изменения" --> modified;
+tracked -- "изменения" --> modified;
+modified -- "git add" --> staged;
 ```
 
 
